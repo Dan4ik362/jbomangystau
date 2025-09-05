@@ -1,0 +1,377 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-05 10:24+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+#: .\jbomangystau\main\templates\main\index.html:6
+msgid "ЦМИ Мангистау"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:15
+msgid "Логотип"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:19
+msgid "Главная"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:20
+#: .\jbomangystau\main\templates\main\index.html:57
+msgid "О нас"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:21
+msgid "Мероприятия"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:22
+msgid "Команда"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:23
+#: .\jbomangystau\main\templates\main\index.html:172
+msgid "Услуги"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:24
+#: .\jbomangystau\main\templates\main\index.html:212
+msgid "Контакты"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:25
+#: .\jbomangystau\main\templates\main\index.html:245
+msgid "FAQ"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:40
+msgid "Центр местных инициатив \"Мангистау\""
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:41
+msgid "Наша цель"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:43
+msgid ""
+"\n"
+"            Продвижение культуры активного участия жителей в решении "
+"региональных проблем,\n"
+"            общественный мониторинг, коучинг, консультации, борьба с "
+"коррупцией и проведение\n"
+"            семинаров/встреч по социальным темам.\n"
+"            "
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:49
+msgid "Узнать больше"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:59
+msgid ""
+"\n"
+"                Наша организация нацелена на продвижение культуры активного "
+"участия граждан\n"
+"                в решении региональных проблем. Мы занимаемся общественным "
+"мониторингом,\n"
+"                коучингом, консультациями и боремся с коррупцией.\n"
+"                <br><br>\n"
+"                Наша цель — организовать и провести семинары и встречи по "
+"актуальным\n"
+"                социальным темам для улучшения качества жизни в обществе.\n"
+"                "
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:70
+msgid "Фото 1"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:71
+msgid "Фото 2"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:72
+msgid "Фото 3"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:73
+msgid "Фото 4"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:80
+msgid "Проекты и мероприятия"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:82
+msgid ""
+"\n"
+"            Мы собрали для вас все наши проекты — как прошедшие, так и те, "
+"что идут прямо сейчас.\n"
+"            Здесь вы найдёте фото, подробности мероприятий и наши успехи.\n"
+"            "
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:90
+msgid "Проект 1"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:92
+#: .\jbomangystau\main\templates\main\index.html:176
+msgid "Общественный мониторинг"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:93
+msgid ""
+"Проведение мониторинга состояния окружающей среды и социальной сферы региона."
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:98
+msgid "Проект 2"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:100
+msgid "Коучинг и консультации"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:101
+msgid ""
+"Организация сессий и консультаций для жителей по вопросам участия в "
+"общественной жизни."
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:106
+msgid "Проект 3"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:108
+msgid "Борьба с коррупцией"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:109
+msgid ""
+"Инициативы и мероприятия, направленные на борьбу с коррупцией на местном "
+"уровне."
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:114
+msgid "Проект 4"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:116
+msgid "Социальные инициативы"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:117
+msgid "Поддержка гражданских проектов, направленных на развитие общества."
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:122
+msgid "Проект 5"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:124
+msgid "Образовательные программы"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:125
+msgid "Организация тренингов и семинаров для молодежи и взрослых."
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:130
+msgid "Проект 6"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:132
+msgid "Волонтёрские движения"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:133
+msgid "Развитие волонтёрства и вовлечение граждан в общественную жизнь."
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:144
+msgid "Наша команда"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:146
+msgid ""
+"\n"
+"        Наша команда — это группа профессионалов, объединённых общей целью.\n"
+"        Каждый из нас вносит уникальный вклад в развитие проектов и "
+"достижение результатов.\n"
+"        "
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:153
+#: .\jbomangystau\main\templates\main\index.html:154
+msgid "Жаксыгул Махамбетова"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:154
+#: .\jbomangystau\main\templates\main\index.html:158
+msgid "Директор"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:157
+#: .\jbomangystau\main\templates\main\index.html:158
+msgid "Аглен Таласбаева"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:161
+#: .\jbomangystau\main\templates\main\index.html:162
+msgid "Самал Алимкызы"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:162
+msgid "Дизайн Директор"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:165
+#: .\jbomangystau\main\templates\main\index.html:166
+msgid "Ердос Ерболатов"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:166
+msgid "Организатор"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:177
+msgid ""
+"Проводим независимый мониторинг государственных программ и проектов в "
+"Мангистауской области для обеспечения прозрачности и эффективности."
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:181
+msgid "Антикоррупционные консультации"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:182
+msgid ""
+"Предоставляем консультации гражданам и организациям по вопросам "
+"предотвращения коррупции, включая разъяснение законодательства и помощь в "
+"подаче обращений."
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:186
+msgid "Коучинг и обучение"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:187
+msgid ""
+"Организуем тренинги и коучинг-сессии для активных граждан, направленные на "
+"развитие лидерских качеств, навыков управления проектами и участия в "
+"общественных инициативах."
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:191
+msgid "Проведение семинаров"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:192
+msgid ""
+"Проводим семинары по актуальным темам: здравоохранение, образование, "
+"экология и социальная ответственность. Помогаем сообществам находить решения "
+"местных проблем."
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:196
+msgid "Поддержка местных инициатив"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:197
+msgid ""
+"Оказываем консультации и поддержку гражданским инициативам, помогая в "
+"разработке и реализации проектов, направленных на развитие региона."
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:201
+msgid "Формирование активного сообщества"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:202
+msgid ""
+"Создаём платформу для вовлечения жителей в решение местных вопросов, "
+"организуем встречи и форумы для обсуждения идей и построения диалога между "
+"гражданами и властями."
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:223
+msgid "г. Актау, 34 мкр., Ассамблея Казахстана, 29 офис"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:232
+msgid "Отправьте сообщение"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:234
+msgid "Ваше имя"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:235
+msgid "Ваш email"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:236
+msgid "Ваше сообщение"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:237
+msgid "Отправить"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:247
+msgid "Что такое общественный мониторинг?"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:248
+msgid ""
+"Общественный мониторинг — это процесс наблюдения и анализа деятельности "
+"органов власти и других организаций с целью выявления проблем и нарушений. "
+"Мы помогаем жителям активно участвовать в этом процессе."
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:251
+msgid "Как работает коучинг?"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:252
+msgid ""
+"Коучинг — это метод индивидуальной работы, который помогает участникам "
+"развивать свои навыки и решать задачи. Мы проводим сессии для жителей по "
+"вопросам участия в общественной жизни."
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:255
+msgid "Какие виды консультаций вы предоставляете?"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:256
+msgid ""
+"Мы предоставляем консультации по вопросам участия в общественном "
+"мониторинге, борьбы с коррупцией и решению региональных проблем."
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:259
+msgid "Как мы боремся с коррупцией?"
+msgstr ""
+
+#: .\jbomangystau\main\templates\main\index.html:260
+msgid ""
+"Мы активно работаем над борьбой с коррупцией через образовательные "
+"программы, мониторинг и семинары для повышения осведомленности населения."
+msgstr ""

@@ -1,0 +1,267 @@
+{% load static i18n %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans "ЦМИ Мангистау" %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo">
+        <img src="{% static 'main/img/logo.png' %}" alt="{% trans 'Логотип' %}">
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#hero">{% trans "Главная" %}</a></li>
+            <li><a href="#about">{% trans "О нас" %}</a></li>
+            <li><a href="#projects">{% trans "Мероприятия" %}</a></li>
+            <li><a href="#team-section">{% trans "Команда" %}</a></li>
+            <li><a href="#services-section">{% trans "Услуги" %}</a></li>
+            <li><a href="#contacts-section">{% trans "Контакты" %}</a></li>
+            <li><a href="#faq-section">{% trans "FAQ" %}</a></li>
+        </ul>
+    </nav>
+    <div class="language-switcher">
+    <i class="fas fa-globe"></i>
+    <div class="language-dropdown">
+        <form action="{% url 'set_language' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ request.path }}">
+            <button type="submit" name="language" value="en">English</button>
+            <button type="submit" name="language" value="kk">Қазақша</button>
+            <button type="submit" name="language" value="ru">Русский</button>
+        </form>
+    </div>
+</div>
+
+</header>
+
+<div class="hero" id="hero">
+    <div class="hero-content">
+        <h3>{% trans 'Центр местных инициатив "Мангистау"' %}</h3>
+        <h1>{% trans "Наша цель" %}</h1>
+        <p>
+            {% blocktrans %}
+            Продвижение культуры активного участия жителей в решении региональных проблем,
+            общественный мониторинг, коучинг, консультации, борьба с коррупцией и проведение
+            семинаров/встреч по социальным темам.
+            {% endblocktrans %}
+        </p>
+        <a href="#about" class="btn">{% trans "Узнать больше" %}</a>
+    </div>
+</div>
+
+<!-- 🔥 Блок "О нас" -->
+<section class="about" id="about">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>{% trans "О нас" %}</h2>
+            <p>
+                {% blocktrans %}
+                Наша организация нацелена на продвижение культуры активного участия граждан
+                в решении региональных проблем. Мы занимаемся общественным мониторингом,
+                коучингом, консультациями и боремся с коррупцией.
+                <br><br>
+                Наша цель — организовать и провести семинары и встречи по актуальным
+                социальным темам для улучшения качества жизни в обществе.
+                {% endblocktrans %}
+            </p>
+        </div>
+        <div class="about-images">
+            <img src="{% static 'main/img/about1.png' %}" alt="{% trans 'Фото 1' %}">
+            <img src="{% static 'main/img/about2.png' %}" alt="{% trans 'Фото 2' %}">
+            <img src="{% static 'main/img/about3.png' %}" alt="{% trans 'Фото 3' %}">
+            <img src="{% static 'main/img/about4.png' %}" alt="{% trans 'Фото 4' %}">
+        </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <div class="projects-container">
+        <h2>{% trans "Проекты и мероприятия" %}</h2>
+
+        <div class="projects-slider">
+            <div class="project-card">
+                <img src="{% static 'main/img/photo1.jpg' %}" alt="{% trans 'Проект 1' %}">
+                <div class="card-text">
+                    <h3>{% trans "Общественный мониторинг" %}</h3>
+                    <p>{% trans "Проведение мониторинга состояния окружающей среды и социальной сферы региона." %}</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="{% static 'main/img/photo2.jpg' %}" alt="{% trans 'Проект 2' %}">
+                <div class="card-text">
+                    <h3>{% trans "Коучинг и консультации" %}</h3>
+                    <p>{% trans "Организация сессий и консультаций для жителей по вопросам участия в общественной жизни." %}</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="{% static 'main/img/photo3.jpg' %}" alt="{% trans 'Проект 3' %}">
+                <div class="card-text">
+                    <h3>{% trans "Борьба с коррупцией" %}</h3>
+                    <p>{% trans "Инициативы и мероприятия, направленные на борьбу с коррупцией на местном уровне." %}</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="{% static 'main/img/photo4.jpg' %}" alt="{% trans 'Проект 4' %}">
+                <div class="card-text">
+                    <h3>{% trans "Социальные инициативы" %}</h3>
+                    <p>{% trans "Поддержка гражданских проектов, направленных на развитие общества." %}</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="{% static 'main/img/photo5.jpg' %}" alt="{% trans 'Проект 5' %}">
+                <div class="card-text">
+                    <h3>{% trans "Образовательные программы" %}</h3>
+                    <p>{% trans "Организация тренингов и семинаров для молодежи и взрослых." %}</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="{% static 'main/img/photo6.jpg' %}" alt="{% trans 'Проект 6' %}">
+                <div class="card-text">
+                    <h3>{% trans "Волонтёрские движения" %}</h3>
+                    <p>{% trans "Развитие волонтёрства и вовлечение граждан в общественную жизнь." %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tecor tecor1"></div>
+    <div class="tecor tecor2"></div>
+    <div class="tecor tecor3"></div>
+</section>
+
+<section class="team-section" id="team-section">
+    <h1>{% trans "Наша команда" %}</h1>
+    <p>
+        {% blocktrans %}
+        Наша команда — это группа профессионалов, объединённых общей целью.
+        Каждый из нас вносит уникальный вклад в развитие проектов и достижение результатов.
+        {% endblocktrans %}
+    </p>
+    <div class="team-members">
+        <div class="team-member">
+            <img src="{% static 'main/img/team1.png' %}" alt="{% trans 'Жаксыгул Махамбетова' %}">
+            <p>{% trans "Жаксыгул Махамбетова" %}<br>{% trans "Директор" %}</p>
+        </div>
+        <div class="team-member">
+            <img src="{% static 'main/img/team2.png' %}" alt="{% trans 'Аглен Таласбаева' %}">
+            <p>{% trans "Аглен Таласбаева" %}<br>{% trans "Директор" %}</p>
+        </div>
+        <div class="team-member">
+            <img src="{% static 'main/img/team3.png' %}" alt="{% trans 'Самал Алимкызы' %}">
+            <p>{% trans "Самал Алимкызы" %}<br>{% trans "Дизайн Директор" %}</p>
+        </div>
+        <div class="team-member">
+            <img src="{% static 'main/img/team4.png' %}" alt="{% trans 'Ердос Ерболатов' %}">
+            <p>{% trans "Ердос Ерболатов" %}<br>{% trans "Организатор" %}</p>
+        </div>
+    </div>
+</section>
+
+<section class="services-section" id="services-section">
+    <h1>{% trans "Услуги" %}</h1>
+    <div class="services-grid">
+        <div class="service-item">
+            <i class="fas fa-search"></i>
+            <h3>{% trans "Общественный мониторинг" %}</h3>
+            <p>{% trans "Проводим независимый мониторинг государственных программ и проектов в Мангистауской области для обеспечения прозрачности и эффективности." %}</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-balance-scale"></i>
+            <h3>{% trans "Антикоррупционные консультации" %}</h3>
+            <p>{% trans "Предоставляем консультации гражданам и организациям по вопросам предотвращения коррупции, включая разъяснение законодательства и помощь в подаче обращений." %}</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h3>{% trans "Коучинг и обучение" %}</h3>
+            <p>{% trans "Организуем тренинги и коучинг-сессии для активных граждан, направленные на развитие лидерских качеств, навыков управления проектами и участия в общественных инициативах." %}</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-users"></i>
+            <h3>{% trans "Проведение семинаров" %}</h3>
+            <p>{% trans "Проводим семинары по актуальным темам: здравоохранение, образование, экология и социальная ответственность. Помогаем сообществам находить решения местных проблем." %}</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-lightbulb"></i>
+            <h3>{% trans "Поддержка местных инициатив" %}</h3>
+            <p>{% trans "Оказываем консультации и поддержку гражданским инициативам, помогая в разработке и реализации проектов, направленных на развитие региона." %}</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-handshake"></i>
+            <h3>{% trans "Формирование активного сообщества" %}</h3>
+            <p>{% trans "Создаём платформу для вовлечения жителей в решение местных вопросов, организуем встречи и форумы для обсуждения идей и построения диалога между гражданами и властями." %}</p>
+        </div>
+    </div>
+    <div class="decor decor1"></div>
+    <div class="decor decor2"></div>
+    <div class="decor decor3"></div>
+</section>
+
+<section class="contacts-section" id="contacts-section">
+    <div class="contact-info">
+        <h2>{% trans "Контакты" %}</h2>
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>8(7292) 30-13-18</p>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>mangystau.bastama@gmail.com</p>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>{% trans "г. Актау, 34 мкр., Дом Дружбы, 29 офис" %}</p>
+        </div>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/direct/inbox/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61557520400880&sk=grid" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h2>{% trans "Отправьте сообщение" %}</h2>
+        <form>
+            <input type="text" placeholder="{% trans 'Ваше имя' %}" required>
+            <input type="email" placeholder="{% trans 'Ваш email' %}" required>
+            <textarea placeholder="{% trans 'Ваше сообщение' %}" required></textarea>
+            <button type="submit">{% trans "Отправить" %}</button>
+        </form>
+    </div>
+    <div class="decot decot1"></div>
+    <div class="decot decot2"></div>
+</section>
+
+<section class="faq-section" id="faq-section">
+    <h1>{% trans "FAQ" %}</h1>
+    <div class="faq-item">
+        <div class="faq-question">{% trans "Что такое общественный мониторинг?" %} <span><i class="fas fa-plus"></i></span></div>
+        <div class="faq-answer">{% trans "Общественный мониторинг — это процесс наблюдения и анализа деятельности органов власти и других организаций с целью выявления проблем и нарушений. Мы помогаем жителям активно участвовать в этом процессе." %}</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">{% trans "Как работает коучинг?" %} <span><i class="fas fa-plus"></i></span></div>
+        <div class="faq-answer">{% trans "Коучинг — это метод индивидуальной работы, который помогает участникам развивать свои навыки и решать задачи. Мы проводим сессии для жителей по вопросам участия в общественной жизни." %}</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">{% trans "Какие виды консультаций вы предоставляете?" %} <span><i class="fas fa-plus"></i></span></div>
+        <div class="faq-answer">{% trans "Мы предоставляем консультации по вопросам участия в общественном мониторинге, борьбы с коррупцией и решению региональных проблем." %}</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">{% trans "Как мы боремся с коррупцией?" %} <span><i class="fas fa-plus"></i></span></div>
+        <div class="faq-answer">{% trans "Мы активно работаем над борьбой с коррупцией через образовательные программы, мониторинг и семинары для повышения осведомленности населения." %}</div>
+    </div>
+    <div class="decol decol1"></div>
+    <div class="decol decol2"></div>
+</section>
+
+<script src="{% static 'main/js/script.js' %}"></script>
+</body>
+</html>

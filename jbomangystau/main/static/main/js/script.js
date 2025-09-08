@@ -1,51 +1,46 @@
-    document.addEventListener("DOMContentLoaded", function () {
-        const hero = document.getElementById("hero");
+document.addEventListener("DOMContentLoaded", function () {
+    // Валидация формы
+    const contactForm = document.querySelector('.contact-form form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (event) {
+            const name = contactForm.querySelector('input[name="name"]').value.trim();
+            const email = contactForm.querySelector('input[name="email"]').value.trim();
+            const message = contactForm.querySelector('textarea[name="message"]').value.trim();
 
-        // список картинок (добавь свои)
-        const images = [
-            "{% static 'main/img/bg.jpg' %}",
-            "{% static 'main/img/bg2.jpg' %}",
-            "{% static 'main/img/bg3.jpg' %}"
-        ];
-
-        let index = 0;
-
-        function changeBackground() {
-            hero.style.backgroundImage = `url('${images[index]}')`;
-            index = (index + 1) % images.length;
-        }
-
-        // сразу первая картинка
-        changeBackground();
-
-        // смена каждые 2 секунд
-        setInterval(changeBackground, 2000);
-    });
-
-
-
-document.querySelector('.language-switcher').addEventListener('click', function() {
-    this.classList.toggle('active');
-});
-
-// Закрытие меню при клике вне области
-document.addEventListener('click', function(event) {
-    const languageSwitcher = document.querySelector('.language-switcher');
-    if (!languageSwitcher.contains(event.target)) {
-        languageSwitcher.classList.remove('active');
-    }
-});
-
-
-document.querySelectorAll('.faq-item').forEach(item => {
-    item.addEventListener('click', () => {
-        // Закрываем все остальные открытые элементы
-        document.querySelectorAll('.faq-item').forEach(otherItem => {
-            if (otherItem !== item) {
-                otherItem.classList.remove('active');
+            if (!name || !email || !message) {
+                event.preventDefault();
+                alert('Пожалуйста, заполните все поля.');
+            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                event.preventDefault();
+                alert('Пожалуйста, введите действительный email.');
             }
         });
-        // Переключаем текущий элемент
-        item.classList.toggle('active');
+    }
+
+    // Языковой переключатель
+    document.querySelector('.language-switcher').addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+
+    document.addEventListener('click', function(event) {
+        const languageSwitcher = document.querySelector('.language-switcher');
+        if (!languageSwitcher.contains(event.target)) {
+            languageSwitcher.classList.remove('active');
+        }
+    });
+
+    // FAQ
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.addEventListener('click', () => {
+            console.log('Клик по FAQ-item'); // Отладка: проверка клика
+            // Закрываем все остальные открытые элементы
+            document.querySelectorAll('.faq-item').forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            // Переключаем текущий элемент
+            item.classList.toggle('active');
+        });
     });
 });

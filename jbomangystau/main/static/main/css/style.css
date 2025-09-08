@@ -50,6 +50,7 @@ body {
     transform: scale(1.05);
 }
 
+/*------------ Языковое меню ------------------------*/
 /* Языковое меню */
 .language-switcher {
     position: relative;
@@ -75,13 +76,14 @@ body {
     display: none;
     position: absolute;
     top: 120%;
-    left: 0;
+    left: auto;       /* сброс старого left */
+    right: 0;         /* меню теперь будет "привязано" к правому краю иконки */
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     z-index: 999;
-    min-width: 150px;
+    min-width: 120px; /* немного шире */
     padding: 6px 0;
 }
 
@@ -89,9 +91,10 @@ body {
     margin: 0;
 }
 
+
 .language-dropdown button {
     display: block;
-    width: 100%;
+    width: 100px;
     padding: 10px 14px;
     background: none;
     border: none;
@@ -111,10 +114,10 @@ body {
     display: block;
 }
 
+
 /* === HERO === */
 .hero {
     height: 100vh;
-    background: no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,20 +125,24 @@ body {
     color: white;
     padding: 0 20px;
     position: relative;
-    transition: background-image 1s ease-in-out; /* плавная смена */
+    overflow: hidden;
+    background-attachment: fixed; /* параллакс-эффект (можно убрать) */
 }
 
-.hero::after {
-    content: "";
+/* затемнение */
+.hero-overlay {
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     max-width: 800px;
 }
 
@@ -174,6 +181,8 @@ body {
     background: #ff6333;
 }
 
+
+
 /* === ABOUT === */
 .about {
     background: #fdeedc;
@@ -186,36 +195,25 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    align-items: center;
+    align-items: flex-start; /* чтобы верхушки были на одной линии */
     justify-content: space-between;
 }
 
-/* Текст */
+/* Текст слева */
 .about-text {
-    flex: 1 1 45%;
+    flex: 1 1 50%;  /* 50% ширины */
+    min-width: 300px; /* чтобы не ломалось на маленьких экранах */
 }
 
-.about-text h2 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #111;
-}
-
-.about-text p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Картинки */
+/* Фото справа */
 .about-images {
-    flex: 1 1 45%;
+    flex: 1 1 45%;  /* 45% ширины */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     position: relative;
     z-index: 2;
+    min-width: 280px; /* чтобы не слепалось */
 }
 
 .about-images img {
@@ -229,6 +227,7 @@ body {
 .about-images img:hover {
     transform: scale(1.05);
 }
+
 
 /* 🎨 Декоративные фигурки */
 .about::before,
@@ -636,7 +635,34 @@ body {
             100% { opacity: 1; transform: translateY(0); }
         }
 
-        /*FAQ*/
+
+.messages {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.message {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.message.success {
+    background: #28a745;
+}
+
+.message.error {
+    background: #dc3545;
+}
+
+
+
+
+/* FAQ */
 .faq-section {
     padding: 80px 10%;
     max-width: 1200px;
@@ -687,6 +713,7 @@ body {
     margin-top: 10px;
     display: none;
     line-height: 1.6;
+    animation: fadeIn 0.3s ease-in-out; /* Анимация появления ответа */
 }
 .faq-item.active .faq-answer {
     display: block;
@@ -725,4 +752,8 @@ body {
 @keyframes fadeInDown {
     0% { opacity: 0; transform: translateY(-20px); }
     100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }

@@ -13,17 +13,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # --- SECURITY ---
 SECRET_KEY = 'django-insecure-6qjuj&1_x&$9)5vziuxqdo#_j0g!g@7bq^3p-=uz%1fn#_vm_s'
-DEBUG = True
-ALLOWED_HOSTS = []
+DEBUG = False
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.ngrok-free.app']
 
 # --- APPLICATIONS ---
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'modeltranslation',
     'main',  # ваше приложение
 ]
 
@@ -115,3 +117,48 @@ MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 # --- DEFAULT PRIMARY KEY FIELD TYPE ---
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# --- MEDIA FILES ---
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.ngrok-free.app',
+]
+
+# Jazzmin настройки
+JAZZMIN_SETTINGS = {
+    # 🔹 Заголовки и бренд
+    "site_title": "ЦМИ Мангистау | Админ",
+    "site_header": "ЦМИ Мангистау",
+    "site_brand": "Админ-панель",
+    "welcome_sign": "Добро пожаловать 👋 в панель управления",
+    "site_logo": "main/img/logo.png",   # путь к твоему лого (положи в static)
+    "site_logo_classes": "img-circle",  # сделает логотип круглым
+    "site_icon": "main/img/favicon.ico",
+
+    # 🔹 Темы (Bootstrap + dark mode)
+    "theme": "darkly",              # тёмная тема по умолчанию
+    "dark_mode_theme": "cyborg",    # если у пользователя включена тёмная тема
+
+    # 🔹 Навигация
+    "show_sidebar": True,
+    "navigation_expanded": True,  # меню открыто по умолчанию
+    "hide_apps": [],              # можешь скрыть ненужные приложения
+    "hide_models": [],
+
+    # 🔹 Иконки моделей (Font Awesome)
+    "icons": {
+        "auth.User": "fas fa-user-shield",
+        "auth.Group": "fas fa-users-cog",
+        "main.Project": "fas fa-briefcase",
+        "main.Service": "fas fa-tools",
+        "main.TeamMember": "fas fa-user-tie",
+    },
+
+    # 🔹 Порядок отображения приложений
+    "order_with_respect_to": ["auth", "main"],
+
+    # 🔹 Нижний колонтитул
+    "copyright": "© ЦМИ Мангистау 2025",
+}

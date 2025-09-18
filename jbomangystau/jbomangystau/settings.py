@@ -12,8 +12,8 @@ from decouple import config
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # --- SECURITY ---
-SECRET_KEY = 'django-insecure-6qjuj&1_x&$9)5vziuxqdo#_j0g!g@7bq^3p-=uz%1fn#_vm_s'
-DEBUG = False
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 # --- APPLICATIONS ---

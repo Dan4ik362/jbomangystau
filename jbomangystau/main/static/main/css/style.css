@@ -176,11 +176,13 @@ body {
     border-radius: 25px;
     text-decoration: none;
     font-weight: 600;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s ease;
 }
 
 .btn:hover {
     background: #ff6333;
+    transform: scale(1.1);
+
 }
 
 /* Стили для бургер-меню и переключателя языков */
@@ -611,6 +613,93 @@ body {
     .filter-buttons label {
         padding: 6px 12px;
         font-size: 11px;
+    }
+
+
+    .project-card {
+        flex: 0 0 60%; /* Уменьшаем ширину на мобильных */
+        margin: 0 auto 15px;
+    }
+
+    .slider-btn.prev { left: 5px; }
+    .slider-btn.next { right: 5px; }
+}
+
+
+@media (max-width: 220px) {
+    .projects {
+        padding: 40px 3%;
+        text-align: center;
+    }
+
+
+    .filter-buttons {
+        padding: 4px;
+        gap: 4px;
+        margin-bottom: 2em;
+    }
+
+    .filter-buttons label {
+        padding: 6px 12px;
+        font-size: 100px;
+    }
+
+
+    .project-card {
+        flex: 0 0 60%; /* Уменьшаем ширину на мобильных */
+        margin: 0 auto 15px;
+    }
+
+    .slider-btn.prev { left: 5px; }
+    .slider-btn.next { right: 5px; }
+}
+
+
+@media (max-width: 356px) {
+    .projects {
+        padding: 40px 3%;
+        text-align: center;
+    }
+
+
+    .filter-buttons {
+        padding: 4px;
+        gap: 4px;
+        margin-bottom: 2em;
+    }
+
+    .filter-buttons label {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+
+
+    .project-card {
+        flex: 0 0 60%; /* Уменьшаем ширину на мобильных */
+        margin: 0 auto 15px;
+    }
+
+    .slider-btn.prev { left: 5px; }
+    .slider-btn.next { right: 5px; }
+}
+
+
+@media (max-width: 332px) {
+    .projects {
+        padding: 40px 3%;
+        text-align: center;
+    }
+
+
+    .filter-buttons {
+        padding: 4px;
+        gap: 4px;
+        margin-bottom: 2em;
+    }
+
+    .filter-buttons label {
+        padding: 6px 12px;
+        font-size: 8px;
     }
 
 

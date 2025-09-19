@@ -1,6 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("DOM загружен, инициализация скриптов...");
 
+// Плавный скролл по якорным ссылкам
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            e.preventDefault();
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+
     // Language Switcher
     const languageSwitchers = document.querySelectorAll('.language-switcher');
     languageSwitchers.forEach(switcher => {
@@ -381,5 +398,6 @@ window.addEventListener("resize", () => {
             }
 
 
+z
 });
 

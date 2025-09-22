@@ -13,8 +13,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # --- SECURITY ---
 SECRET_KEY = config('SECRET_KEY')
-DEBUG = True
-ALLOWED_HOSTS = ['*']
+DEBUG = False
+ALLOWED_HOSTS = ['213.109.146.247', 'jbomangystau.kz']
 
 # --- APPLICATIONS ---
 INSTALLED_APPS = [
@@ -123,7 +123,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://*.ngrok-free.app',
+     'https://213.109.146.247',
+    'https://jbomangystau.kz',
 ]
 
 # Jazzmin настройки

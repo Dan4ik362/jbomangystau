@@ -398,6 +398,6 @@ window.addEventListener("resize", () => {
             }
 
 
-z
+
 });
 

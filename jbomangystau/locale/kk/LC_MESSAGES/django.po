@@ -1,0 +1,553 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-15 11:51+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: .\main\models.py:6 .\main\templates\main\index.html:101
+msgid "Гос. соц. заказ"
+msgstr "Әлеуметтік тапсырыс"
+
+#: .\main\models.py:7 .\main\templates\main\index.html:104
+msgid "Грант"
+msgstr "Грант"
+
+#: .\main\models.py:8 .\main\templates\main\index.html:107
+msgid "Благотворительная помощь"
+msgstr "Қайырымдылық көмек"
+
+#: .\main\models.py:11
+msgid "Название"
+msgstr "Аты"
+
+#: .\main\models.py:12
+msgid "Заказчик"
+msgstr "Тұтынушы"
+
+#: .\main\models.py:13
+msgid "Категория"
+msgstr "Санат"
+
+#: .\main\models.py:14 .\main\models.py:26
+msgid "Фото"
+msgstr ""
+
+#: .\main\models.py:20
+msgid "Проект"
+msgstr "Жоба"
+
+#: .\main\models.py:21
+msgid "Проекты"
+msgstr "Жобалар"
+
+#: .\main\models.py:24
+msgid "ФИО"
+msgstr ""
+
+#: .\main\models.py:25
+msgid "Должность"
+msgstr ""
+
+#: .\main\models.py:27
+msgid "Порядок"
+msgstr ""
+
+#: .\main\models.py:33
+#, fuzzy
+#| msgid "Наша команда"
+msgid "Член команды"
+msgstr "Біздің ұжым"
+
+#: .\main\models.py:34
+#, fuzzy
+#| msgid "Наша команда"
+msgid "Члены команды"
+msgstr "Біздің ұжым"
+
+#: .\main\templates\main\index.html:6
+msgid "ЦМИ Мангистау"
+msgstr "Маңғыстау ФБО"
+
+#: .\main\templates\main\index.html:18
+msgid "Логотип"
+msgstr ""
+
+#: .\main\templates\main\index.html:25
+msgid "Главная"
+msgstr "Басты бет"
+
+#: .\main\templates\main\index.html:26 .\main\templates\main\index.html:79
+msgid "О нас"
+msgstr "Біз туралы"
+
+#: .\main\templates\main\index.html:27
+msgid "Мероприятия"
+msgstr "Іс-шаралар"
+
+#: .\main\templates\main\index.html:28
+msgid "Команда"
+msgstr "Ұжым"
+
+#: .\main\templates\main\index.html:29 .\main\templates\main\index.html:183
+msgid "Услуги"
+msgstr "Қызметтер"
+
+#: .\main\templates\main\index.html:30 .\main\templates\main\index.html:307
+msgid "Контакты"
+msgstr "Байланыстар"
+
+#: .\main\templates\main\index.html:31 .\main\templates\main\index.html:353
+msgid "FAQ"
+msgstr ""
+
+#: .\main\templates\main\index.html:57
+msgid "Общественный фонд \"Центр местных инициатив \"Мангистау\""
+msgstr "\"Маңғыстау\" жергілікті бастамалар орталығы\" қоғамдық қоры"
+
+#: .\main\templates\main\index.html:58
+msgid "Наша цель"
+msgstr "Біздің мақсатымыз"
+
+#: .\main\templates\main\index.html:60
+msgid ""
+"\n"
+"             Содействие развитию системы, направленной на повышение "
+"потенциала взрослых, а также молодежи, подростков и других социально "
+"незащищенных слоев населения, исходя из их потребностей.\n"
+"            "
+msgstr ""
+"\n"
+"Ересектердің, сондай-ақ жастардың, жасөспірімдердің және халықтың басқа да "
+"әлеуметтік осал топтарының қажеттіліктерін ескере отырып, олардың әлеуетін "
+"арттыруға бағытталған жүйені дамытуға жәрдемдесу."
+
+#: .\main\templates\main\index.html:64
+msgid "Узнать больше"
+msgstr "Толығырақ біліңіз"
+
+#: .\main\templates\main\index.html:80
+msgid ""
+"Центр поддержки гражданских инициатив Мангистау — это профессиональная "
+"команда, успешно работающая в сфере НПО. Объединяя профессионализм, опыт и "
+"инновации, мы ежедневно трудимся над совершенствованием механизма "
+"взаимодействия государства и неправительственных организаций в регионе. Наш "
+"фонд помогает НПО, инициативным группам и гражданам реализовывать их лучшие "
+"идеи, а также содействует решению проблем уязвимых групп населения. "
+"Сотрудничая с гражданским сектором, государственными органами и бизнес-"
+"структурами, мы стремимся укрепить социальное партнерство во благо общества."
+msgstr ""
+"Маңғыстау азаматтық бастаманы қолдау орталығы — ҮЕҰ саласында табысты жұмыс "
+"істейтін кәсіби команда. Біз кәсібилік, тәжірибе және инновацияларды "
+"біріктіре отырып, мемлекеттік органдар мен үкіметтік емес ұйымдар арасындағы "
+"өзара әрекет ету механизмін жетілдіру үшін күн сайын еңбек етеміз. Біздің "
+"қор ҮЕҰ-дарға, бастамашыл топтарға және азаматтарға олардың  идеяларын "
+"жүзеге асыруға көмектеседі, сондай-ақ осал топтардың мәселелерін шешуге "
+"ықпал етеді. Азаматтық сектормен, мемлекеттік органдармен және бизнес "
+"құрылымдарымен ынтымақтаса отырып, біз қоғамның игілігі үшін әлеуметтік "
+"серіктестікті нығайтуға ұмтыламыз."
+
+#: .\main\templates\main\index.html:83
+msgid "Фото 1"
+msgstr ""
+
+#: .\main\templates\main\index.html:84
+msgid "Фото 2"
+msgstr ""
+
+#: .\main\templates\main\index.html:85
+msgid "Фото 3"
+msgstr ""
+
+#: .\main\templates\main\index.html:86
+msgid "Фото 4"
+msgstr ""
+
+#: .\main\templates\main\index.html:94
+msgid "Проекты и Мероприятия"
+msgstr "Жобалар мен іс-шаралар"
+
+#: .\main\templates\main\index.html:124
+msgid "Заказчик:"
+msgstr "Тұтынушы:"
+
+#: .\main\templates\main\index.html:144
+msgid "Наша команда"
+msgstr "Біздің ұжым"
+
+#: .\main\templates\main\index.html:154 .\main\templates\main\index.html:155
+#: .\main\templates\main\index.html:167 .\main\templates\main\index.html:168
+msgid "Нет данных"
+msgstr ""
+
+#: .\main\templates\main\index.html:187 .\main\templates\main\index.html:211
+msgid "Обучение"
+msgstr "Білім"
+
+#: .\main\templates\main\index.html:188
+msgid "Тренинги, семинары, мастер-классы и менторство для развития навыков."
+msgstr ""
+"Тренингтер, семинарлар, шеберлік сыныптары және дағдыларды дамыту бойынша "
+"тәлімгерлік"
+
+#: .\main\templates\main\index.html:192 .\main\templates\main\index.html:251
+msgid "Консультационные услуги"
+msgstr "Консультациялық қызметтер"
+
+#: .\main\templates\main\index.html:193
+msgid "Юридические, бухгалтерские и методические консультации для НПО."
+msgstr "ҮЕҰ-ға құқықтық, бухгалтерлік және әдістемелік кеңес беру."
+
+#: .\main\templates\main\index.html:197 .\main\templates\main\index.html:279
+msgid "Исследовательско-аналитические"
+msgstr "Зерттеу және аналитикалық"
+
+#: .\main\templates\main\index.html:198
+msgid "Мониторинг, исследования и аналитические рекомендации."
+msgstr "Мониторинг, зерттеу және аналитикалық ұсыныстар."
+
+#: .\main\templates\main\index.html:202 .\main\templates\main\index.html:290
+msgid "Услуги по организации мероприятий"
+msgstr "Оқиғаларды жоспарлау қызметтері"
+
+#: .\main\templates\main\index.html:203
+msgid "Форумы, круглые столы, конференции и общественные слушания."
+msgstr "Форумдар, дөңгелек үстелдер, конференциялар және қоғамдық тыңдаулар."
+
+#: .\main\templates\main\index.html:212
+msgid "Тренинги"
+msgstr "Тренингтер"
+
+#: .\main\templates\main\index.html:214
+msgid "Инструменты медиации"
+msgstr "Медиация құралдары"
+
+#: .\main\templates\main\index.html:215
+msgid "Эффективная коммуникация с общественностью"
+msgstr "Халықпен тиімді байланыс"
+
+#: .\main\templates\main\index.html:216
+msgid "Управление конфликтами"
+msgstr "Жанжалды басқару"
+
+#: .\main\templates\main\index.html:217
+msgid "Управление рисками"
+msgstr "Тәуекелдерді басқару"
+
+#: .\main\templates\main\index.html:218
+msgid "Оценка потребностей целевой аудитории"
+msgstr "Мақсатты аудиторияның қажеттіліктерін бағалау"
+
+#: .\main\templates\main\index.html:219
+msgid "Инструменты адвокации"
+msgstr "Адвокаси құралдары"
+
+#: .\main\templates\main\index.html:220
+msgid "Социальные проекты"
+msgstr "Әлеуметтік жобалар"
+
+#: .\main\templates\main\index.html:221
+msgid "Ведение эффективных переговоров"
+msgstr "Тиімді келіссөздер жүргізу"
+
+#: .\main\templates\main\index.html:223
+msgid "Семинары"
+msgstr "Семинарлар"
+
+#: .\main\templates\main\index.html:225
+msgid ""
+"Гендерная политика (бытовое насилие, репродуктивное здоровье, семейные "
+"ценности, участие женщин в общественной и политической жизни)"
+msgstr ""
+"Гендерлік саясат (тұрмыстық зорлық-зомбылық, репродуктивті денсаулық, отбасы "
+"құндылықтары, әйелдердің қоғамдық және саяси өмірге қатысуы)"
+
+#: .\main\templates\main\index.html:226
+msgid "Формирование антикоррупционной культуры граждан"
+msgstr "Азаматтар арасында сыбайлас жемқорлыққа қарсы мәдениетті қалыптастыру"
+
+#: .\main\templates\main\index.html:227
+msgid "Финансовая грамотность"
+msgstr "Қаржылық сауаттылық"
+
+#: .\main\templates\main\index.html:228
+msgid "Участие общественности в местном самоуправлении"
+msgstr "Жергілікті өзін-өзі басқаруға қоғамның қатысуы"
+
+#: .\main\templates\main\index.html:229
+msgid "Общественный контроль и мониторинг"
+msgstr "Қоғамдық бақылау және мониторинг"
+
+#: .\main\templates\main\index.html:230
+msgid "Правила применения государственных символов РК"
+msgstr "Қазақстан Республикасының мемлекеттік рәміздерін пайдалану ережелері"
+
+#: .\main\templates\main\index.html:231
+msgid "Общественные советы"
+msgstr "Қоғамдық кеңестер"
+
+#: .\main\templates\main\index.html:232
+msgid "Стандарт государственного соцзаказа услуг НПО"
+msgstr "ҮЕҰ қызметтеріне мемлекеттік әлеуметтік тапсырыс стандарты"
+
+#: .\main\templates\main\index.html:233
+msgid "Механизмы взаимодействия государственных органов с НПО"
+msgstr "Мемлекеттік органдар мен ҮЕҰ өзара әрекеттесу механизмдері"
+
+#: .\main\templates\main\index.html:234
+msgid "Права потребителя"
+msgstr "Тұтынушылардың құқықтары"
+
+#: .\main\templates\main\index.html:236
+msgid "Мастер-классы"
+msgstr "Мастер-класстар"
+
+#: .\main\templates\main\index.html:238
+msgid "По написанию социальных проектов"
+msgstr "Әлеуметтік жобаларды жазу туралы"
+
+#: .\main\templates\main\index.html:239 .\main\templates\main\index.html:267
+msgid "Подготовка технической спецификации ГСЗ"
+msgstr "Мемлекеттік жұмыспен қамту қызметіне техникалық шарттарды дайындау"
+
+#: .\main\templates\main\index.html:240
+msgid "По написанию грантовой заявки"
+msgstr "Грантқа өтінім жазу кезінде"
+
+#: .\main\templates\main\index.html:242
+msgid "Менторство"
+msgstr "Тәлімгерлік"
+
+#: .\main\templates\main\index.html:244
+msgid ""
+"Для сотрудников и руководителей начинающих НПО, выпускников колледжей, ВУЗов"
+msgstr ""
+"Жаңадан бастаған ҮЕҰ қызметкерлері мен менеджерлеріне, колледж және "
+"университет түлектеріне арналған"
+
+#: .\main\templates\main\index.html:252
+msgid "Юридические"
+msgstr "Заңды"
+
+#: .\main\templates\main\index.html:254
+msgid "Подготовка учредительных документов для регистрации НПО"
+msgstr "ҮЕҰ тіркеу үшін құрылтай құжаттарын дайындау"
+
+#: .\main\templates\main\index.html:255
+msgid "Перерегистрация НПО"
+msgstr "ҮЕҰ-ды қайта тіркеу"
+
+#: .\main\templates\main\index.html:256
+msgid "Составление договоров услуг"
+msgstr "Қызмет көрсету келісім-шарттарын жасау"
+
+#: .\main\templates\main\index.html:258
+msgid "Бухгалтерские"
+msgstr "Бухгалтерлік есеп"
+
+#: .\main\templates\main\index.html:260
+msgid "Составление бюджета"
+msgstr "Бюджеттеу"
+
+#: .\main\templates\main\index.html:261
+msgid "Ведение бухгалтерского учета в рамках проекта"
+msgstr "Жобаны есепке алу"
+
+#: .\main\templates\main\index.html:262
+msgid "Подготовка финансовых отчетов"
+msgstr "Қаржылық есеп беруді дайындау"
+
+#: .\main\templates\main\index.html:263
+msgid "Сдача налоговых, стат отчетов"
+msgstr "Салық және статистикалық есептерді ұсыну"
+
+#: .\main\templates\main\index.html:265
+msgid "Методические"
+msgstr "Әдістемелік"
+
+#: .\main\templates\main\index.html:268
+msgid "Разработка социальных проектов, грантовых заявок"
+msgstr "Әлеуметтік жобаларды, гранттық өтінімдерді әзірлеу"
+
+#: .\main\templates\main\index.html:269
+msgid "Составление технического задания для исполнителей"
+msgstr "Орындаушыларға техникалық шарттарды жасау"
+
+#: .\main\templates\main\index.html:270
+msgid "Составление плана работы"
+msgstr "Жұмыс жоспарын құрастыру"
+
+#: .\main\templates\main\index.html:271
+msgid "Составление пресс-релиза"
+msgstr "Баспасөз хабарламасын жазу"
+
+#: .\main\templates\main\index.html:272
+msgid "Коучинг"
+msgstr "Коучинг"
+
+#: .\main\templates\main\index.html:281
+msgid "Проведение общественного мониторинга"
+msgstr "Қоғамдық мониторинг жүргізу"
+
+#: .\main\templates\main\index.html:282
+msgid "Проведение социологического исследования"
+msgstr "Социологиялық зерттеулер жүргізу"
+
+#: .\main\templates\main\index.html:283
+msgid "Подготовка рекомендаций и отзывов аналитическим отчетам"
+msgstr "Аналитикалық есептер үшін ұсыныстар мен шолуларды дайындау"
+
+#: .\main\templates\main\index.html:292
+msgid "Модерация диалоговых площадок, форумов"
+msgstr "Диалог алаңдарының, форумдардың модерациясы"
+
+#: .\main\templates\main\index.html:293
+msgid "Круглые столы и семинары, конференции, форумы"
+msgstr "Дөңгелек үстелдер мен семинарлар, конференциялар, форумдар"
+
+#: .\main\templates\main\index.html:294
+msgid "Общественные слушания"
+msgstr "Қоғамдық тыңдаулар"
+
+#: .\main\templates\main\index.html:318
+msgid "г. Актау, 34 мкр., Дом Дружбы, 29 офис"
+msgstr "Ақтау қ., 34 ш/а, Достық үйі, 29 офисы"
+
+#: .\main\templates\main\index.html:327
+msgid "Отправьте сообщение"
+msgstr "Хабарлама жіберу"
+
+#: .\main\templates\main\index.html:330
+msgid "Ваше имя"
+msgstr "Сіздің атыңыз"
+
+#: .\main\templates\main\index.html:331
+msgid "Ваш email"
+msgstr "Сіздің электрондық поштаңыз"
+
+#: .\main\templates\main\index.html:332
+msgid "Ваше сообщение"
+msgstr "Сіздің хабарламаңыз"
+
+#: .\main\templates\main\index.html:333
+msgid "Отправить"
+msgstr "Жіберу"
+
+#: .\main\templates\main\index.html:355
+msgid "Что такое общественный мониторинг?"
+msgstr "Қоғамдық мониторинг дегеніміз не?"
+
+#: .\main\templates\main\index.html:356
+msgid ""
+"Общественный мониторинг — это процесс наблюдения и анализа деятельности "
+"органов власти и других организаций с целью выявления проблем и нарушений. "
+"Мы помогаем жителям активно участвовать в этом процессе."
+msgstr ""
+"Қоғамдық мониторинг – проблемалар мен бұзушылықтарды анықтау мақсатында "
+"мемлекеттік органдар мен басқа да ұйымдардың қызметін бақылау және талдау "
+"процесі. Біз тұрғындардың осы процеске белсенді қатысуына көмектесеміз."
+
+#: .\main\templates\main\index.html:359
+msgid "Как работает коучинг?"
+msgstr "Коучинг қалай жұмыс істейді?"
+
+#: .\main\templates\main\index.html:360
+msgid ""
+"Коучинг — это метод индивидуальной работы, который помогает участникам "
+"развивать свои навыки и решать задачи. Мы проводим сессии для жителей по "
+"вопросам участия в общественной жизни."
+msgstr ""
+"Коучинг – қатысушылардың дағдыларын дамытуға және мәселелерді шешуге "
+"көмектесетін жеке тәсіл. Біз тұрғындар үшін қоғамдық өмірге қатысу "
+"мәселелері бойынша сессиялар өткіземіз."
+
+#: .\main\templates\main\index.html:363
+msgid "Какие виды консультаций вы предоставляете?"
+msgstr "Сіз қандай консультацияларды бересіз?"
+
+#: .\main\templates\main\index.html:364
+msgid ""
+"Мы предоставляем консультации по вопросам участия в общественном "
+"мониторинге, развития инициатив и решению региональных проблем."
+msgstr ""
+"Біз қоғамдық мониторингке қатысу, бастамаларды дамыту және өңірлік "
+"мәселелерді шешу мәселелері бойынша кеңес береміз."
+
+#: .\main\templates\main\index.html:367
+msgid "Как записаться на семинар?"
+msgstr "Семинарға қалай тіркелемін?"
+
+#: .\main\templates\main\index.html:368
+msgid ""
+"Вы можете записаться на семинар через наш сайт или связавшись с нами по "
+"указанным контактам. Участие бесплатное и открыто для всех желающих."
+msgstr ""
+"Семинарға біздің веб-сайт арқылы немесе көрсетілген контактілер арқылы "
+"хабарласу арқылы жазылуыңызға болады. Қатысу тегін және барлық мүдделі "
+"тараптар үшін ашық.."
+
+#: .\main\templates\main\index.html:371
+msgid "Вы помогаете в регистрации НПО?"
+msgstr "Сіз ҮЕҰ тіркеуге көмектесесіз бе?"
+
+#: .\main\templates\main\index.html:372
+msgid ""
+"Да, мы консультируем по вопросам регистрации и правовым аспектам "
+"деятельности неправительственных организаций."
+msgstr ""
+"Иә, біз үкіметтік емес ұйымдарды тіркеу мәселелері мен құқықтық аспектілері "
+"бойынша кеңес береміз."
+
+#: .\main\templates\main\index.html:375
+msgid "Проводите ли вы обучение для молодежи?"
+msgstr "Сіз жастарды оқытуды ұйымдастырасыз ба?"
+
+#: .\main\templates\main\index.html:376
+msgid ""
+"Да, мы организуем тренинги и мастер-классы для молодежи, направленные на "
+"развитие лидерских навыков и активное участие в жизни сообщества."
+msgstr ""
+"Иә, біз жастардың көшбасшылық қасиеттерін дамытуға және қоғам өміріне "
+"белсенді қатысуға бағытталған тренингтер мен шеберлік сабақтарын "
+"ұйымдастырамыз."
+
+#~ msgid ""
+#~ "\n"
+#~ "        Наша команда — это группа профессионалов, объединённых общей "
+#~ "целью.\n"
+#~ "        "
+#~ msgstr ""
+#~ "\n"
+#~ "Біздің ұжым – бір мақсатпен біріккен кәсіби мамандар тобы.\n"
+#~ "            "
+
+#~ msgid "Жаксыгул Маханбетова"
+#~ msgstr "Жақсыгүл Маханбетова"
+
+#~ msgid "Директор"
+#~ msgstr "Директор"
+
+#~ msgid "Аглен Таласбаева"
+#~ msgstr "Ағлен Таласбаева"
+
+#~ msgid "Эксперт"
+#~ msgstr "Маман"
+
+#~ msgid "Сара Сагынбаева"
+#~ msgstr "Сара Сағынбаева"
+
+#~ msgid "Бухгалтер"
+#~ msgstr "Есепші"

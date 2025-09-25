@@ -231,124 +231,127 @@ window.addEventListener("resize", () => {
 });
 
     // Team Carousel
-    if (!window.teamMembers) {
-        console.error("teamMembers is not defined");
-        return;
-    }
+if (!window.teamMembers) {
+    console.error("teamMembers is not defined");
+    return;
+}
 
-    const teamCards = document.querySelectorAll(".card");
-    const teamDots = document.querySelectorAll(".dot");
-    const teamMemberName = document.querySelector(".member-name");
-    const teamMemberRole = document.querySelector(".member-role");
-    const teamLeftArrow = document.querySelector(".nav-arrow.left");
-    const teamRightArrow = document.querySelector(".nav-arrow.right");
-    let teamCurrentIndex = 0;
-    let teamIsAnimating = false;
+const teamCards = document.querySelectorAll(".card");
+const teamDots = document.querySelectorAll(".dot");
+const teamMemberName = document.querySelector(".member-name");
+const teamMemberRole = document.querySelector(".member-role");
+const teamLeftArrow = document.querySelector(".nav-arrow.left");
+const teamRightArrow = document.querySelector(".nav-arrow.right");
+const detailsBtn = document.querySelector(".details-btn");
+let teamCurrentIndex = 0;
+let teamIsAnimating = false;
 
-    function updateTeamCarousel(newIndex) {
-        if (teamIsAnimating || teamCards.length === 0) return;
-        teamIsAnimating = true;
+function updateTeamCarousel(newIndex) {
+    if (teamIsAnimating || teamCards.length === 0) return;
+    teamIsAnimating = true;
 
-        teamCurrentIndex = (newIndex + teamCards.length) % teamCards.length;
-
-        teamCards.forEach((card, i) => {
-            const offset = (i - teamCurrentIndex + teamCards.length) % teamCards.length;
-
-            card.classList.remove("center", "left-1", "right-1", "hidden");
-
-            if (offset === 0) {
-                card.classList.add("center");
-            } else if (offset === 1) {
-                card.classList.add("right-1");
-            } else if (offset === teamCards.length - 1) {
-                card.classList.add("left-1");
-            } else {
-                card.classList.add("hidden");
-            }
-        });
-
-        teamDots.forEach((dot, i) => {
-            dot.classList.toggle("active", i === teamCurrentIndex);
-        });
-
-        if (teamMemberName && teamMemberRole) {
-            teamMemberName.style.opacity = "0";
-            teamMemberRole.style.opacity = "0";
-
-            setTimeout(() => {
-                teamMemberName.textContent = teamMembers[teamCurrentIndex].name;
-                teamMemberRole.textContent = teamMembers[teamCurrentIndex].role;
-                teamMemberName.style.opacity = "1";
-                teamMemberRole.style.opacity = "1";
-            }, 300);
-        }
-
-        setTimeout(() => {
-            teamIsAnimating = false;
-        }, 800);
-    }
-
-    if (teamLeftArrow) {
-        teamLeftArrow.addEventListener("click", () => {
-            updateTeamCarousel(teamCurrentIndex - 1);
-        });
-    }
-
-    if (teamRightArrow) {
-        teamRightArrow.addEventListener("click", () => {
-            updateTeamCarousel(teamCurrentIndex + 1);
-        });
-    }
-
-    teamDots.forEach((dot, i) => {
-        dot.addEventListener("click", () => {
-            updateTeamCarousel(i);
-        });
-    });
+    teamCurrentIndex = (newIndex + teamCards.length) % teamCards.length;
 
     teamCards.forEach((card, i) => {
-        card.addEventListener("click", () => {
-            updateTeamCarousel(i);
-        });
+        const offset = (i - teamCurrentIndex + teamCards.length) % teamCards.length;
+
+        card.classList.remove("center", "left-1", "right-1", "hidden");
+
+        if (offset === 0) {
+            card.classList.add("center");
+        } else if (offset === 1) {
+            card.classList.add("right-1");
+        } else if (offset === teamCards.length - 1) {
+            card.classList.add("left-1");
+        } else {
+            card.classList.add("hidden");
+        }
     });
 
-    document.addEventListener("keydown", (e) => {
-        if (e.key === "ArrowLeft") {
-            updateTeamCarousel(teamCurrentIndex - 1);
-        } else if (e.key === "ArrowRight") {
+    teamDots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === teamCurrentIndex);
+    });
+
+    if (teamMemberName && teamMemberRole && detailsBtn) {
+        teamMemberName.style.opacity = "0";
+        teamMemberRole.style.opacity = "0";
+        detailsBtn.style.opacity = "0";
+
+        setTimeout(() => {
+            teamMemberName.textContent = teamMembers[teamCurrentIndex].name;
+            teamMemberRole.textContent = teamMembers[teamCurrentIndex].role;
+            detailsBtn.setAttribute("onclick", `openDialog('member-dialog-${teamMembers[teamCurrentIndex].name.toLowerCase().replace(/ /g, '-')}')`);
+            teamMemberName.style.opacity = "1";
+            teamMemberRole.style.opacity = "1";
+            detailsBtn.style.opacity = "1";
+        }, 300);
+    }
+
+    setTimeout(() => {
+        teamIsAnimating = false;
+    }, 800);
+}
+
+if (teamLeftArrow) {
+    teamLeftArrow.addEventListener("click", () => {
+        updateTeamCarousel(teamCurrentIndex - 1);
+    });
+}
+
+if (teamRightArrow) {
+    teamRightArrow.addEventListener("click", () => {
+        updateTeamCarousel(teamCurrentIndex + 1);
+    });
+}
+
+teamDots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+        updateTeamCarousel(i);
+    });
+});
+
+teamCards.forEach((card, i) => {
+    card.addEventListener("click", () => {
+        updateTeamCarousel(i);
+    });
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") {
+        updateTeamCarousel(teamCurrentIndex - 1);
+    } else if (e.key === "ArrowRight") {
+        updateTeamCarousel(teamCurrentIndex + 1);
+    }
+});
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+document.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+});
+
+document.addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const swipeThreshold = 50;
+    const diff = touchStartX - touchEndX;
+
+    if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0) {
             updateTeamCarousel(teamCurrentIndex + 1);
-        }
-    });
-
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    document.addEventListener("touchstart", (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-    });
-
-    document.addEventListener("touchend", (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-    });
-
-    function handleSwipe() {
-        const swipeThreshold = 50;
-        const diff = touchStartX - touchEndX;
-
-        if (Math.abs(diff) > swipeThreshold) {
-            if (diff > 0) {
-                updateTeamCarousel(teamCurrentIndex + 1);
-            } else {
-                updateTeamCarousel(teamCurrentIndex - 1);
-            }
+        } else {
+            updateTeamCarousel(teamCurrentIndex - 1);
         }
     }
+}
 
-    if (teamCards.length > 0) {
-        updateTeamCarousel(0);
-    }
-
+if (teamCards.length > 0) {
+    updateTeamCarousel(0);
+}
 
 // Бургер-меню
             const burgerMenu = document.getElementById('burgerMenu');

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-15 11:51+0500\n"
+"POT-Creation-Date: 2025-09-25 14:46+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,120 +20,118 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\main\models.py:6 .\main\templates\main\index.html:101
+#: .\main\models.py:7 .\main\templates\main\index.html:122
 msgid "Гос. соц. заказ"
 msgstr ""
 
-#: .\main\models.py:7 .\main\templates\main\index.html:104
+#: .\main\models.py:8 .\main\templates\main\index.html:124
 msgid "Грант"
 msgstr ""
 
-#: .\main\models.py:8 .\main\templates\main\index.html:107
+#: .\main\models.py:9 .\main\templates\main\index.html:126
 msgid "Благотворительная помощь"
 msgstr ""
 
-#: .\main\models.py:11
+#: .\main\models.py:12
 msgid "Название"
 msgstr ""
 
-#: .\main\models.py:12
+#: .\main\models.py:13
 msgid "Заказчик"
 msgstr ""
 
-#: .\main\models.py:13
+#: .\main\models.py:14
 msgid "Категория"
 msgstr ""
 
-#: .\main\models.py:14 .\main\models.py:26
+#: .\main\models.py:15 .\main\models.py:28
 msgid "Фото"
 msgstr ""
 
-#: .\main\models.py:20
+#: .\main\models.py:21
 msgid "Проект"
 msgstr ""
 
-#: .\main\models.py:21
+#: .\main\models.py:22
 msgid "Проекты"
 msgstr ""
 
-#: .\main\models.py:24
-msgid "ФИО"
-msgstr ""
-
-#: .\main\models.py:25
-msgid "Должность"
+#: .\main\models.py:26
+msgid "Имя"
 msgstr ""
 
 #: .\main\models.py:27
-msgid "Порядок"
-msgstr ""
-
-#: .\main\models.py:33
-msgid "Член команды"
+msgid "Роль"
 msgstr ""
 
 #: .\main\models.py:34
+msgid "Член команды"
+msgstr ""
+
+#: .\main\models.py:35
 msgid "Члены команды"
 msgstr ""
 
-#: .\main\templates\main\index.html:6
+#: .\main\templates\main\index.html:7
 msgid "ЦМИ Мангистау"
 msgstr ""
 
-#: .\main\templates\main\index.html:18
+#: .\main\templates\main\index.html:28 .\main\templates\main\index.html:79
 msgid "Логотип"
 msgstr ""
 
-#: .\main\templates\main\index.html:25
+#: .\main\templates\main\index.html:32 .\main\templates\main\index.html:83
 msgid "Главная"
 msgstr ""
 
-#: .\main\templates\main\index.html:26 .\main\templates\main\index.html:79
+#: .\main\templates\main\index.html:33 .\main\templates\main\index.html:84
+#: .\main\templates\main\index.html:104
 msgid "О нас"
 msgstr ""
 
-#: .\main\templates\main\index.html:27
+#: .\main\templates\main\index.html:34 .\main\templates\main\index.html:85
 msgid "Мероприятия"
 msgstr ""
 
-#: .\main\templates\main\index.html:28
+#: .\main\templates\main\index.html:35 .\main\templates\main\index.html:86
 msgid "Команда"
 msgstr ""
 
-#: .\main\templates\main\index.html:29 .\main\templates\main\index.html:183
+#: .\main\templates\main\index.html:36 .\main\templates\main\index.html:87
+#: .\main\templates\main\index.html:278
 msgid "Услуги"
 msgstr ""
 
-#: .\main\templates\main\index.html:30 .\main\templates\main\index.html:307
+#: .\main\templates\main\index.html:37 .\main\templates\main\index.html:88
+#: .\main\templates\main\index.html:398
 msgid "Контакты"
 msgstr ""
 
-#: .\main\templates\main\index.html:31 .\main\templates\main\index.html:353
+#: .\main\templates\main\index.html:38 .\main\templates\main\index.html:89
+#: .\main\templates\main\index.html:442
 msgid "FAQ"
 msgstr ""
 
-#: .\main\templates\main\index.html:57
+#: .\main\templates\main\index.html:94
 msgid "Общественный фонд \"Центр местных инициатив \"Мангистау\""
 msgstr ""
 
-#: .\main\templates\main\index.html:58
+#: .\main\templates\main\index.html:95
 msgid "Наша цель"
 msgstr ""
 
-#: .\main\templates\main\index.html:60
+#: .\main\templates\main\index.html:96
 msgid ""
-"\n"
-"             Содействие развитию системы, направленной на повышение "
-"потенциала взрослых, а также молодежи, подростков и других социально "
-"незащищенных слоев населения, исходя из их потребностей.\n"
-"            "
+"Содействие развитию системы, направленной на повышение потенциала взрослых, "
+"а также молодежи, подростков и других социально незащищенных слоев "
+"населения, исходя из их потребностей."
 msgstr ""
 
-#: .\main\templates\main\index.html:64
+#: .\main\templates\main\index.html:97
 msgid "Узнать больше"
 msgstr ""
 
-#: .\main\templates\main\index.html:80
+#: .\main\templates\main\index.html:105
 msgid ""
 "Центр поддержки гражданских инициатив Мангистау — это профессиональная "
 "команда, успешно работающая в сфере НПО. Объединяя профессионализм, опыт и "
@@ -145,343 +143,611 @@ msgid ""
 "структурами, мы стремимся укрепить социальное партнерство во благо общества."
 msgstr ""
 
-#: .\main\templates\main\index.html:83
+#: .\main\templates\main\index.html:108
 msgid "Фото 1"
 msgstr ""
 
-#: .\main\templates\main\index.html:84
+#: .\main\templates\main\index.html:109
 msgid "Фото 2"
 msgstr ""
 
-#: .\main\templates\main\index.html:85
+#: .\main\templates\main\index.html:110
 msgid "Фото 3"
 msgstr ""
 
-#: .\main\templates\main\index.html:86
+#: .\main\templates\main\index.html:111
 msgid "Фото 4"
 msgstr ""
 
-#: .\main\templates\main\index.html:94
+#: .\main\templates\main\index.html:118
 msgid "Проекты и Мероприятия"
 msgstr ""
 
-#: .\main\templates\main\index.html:124
+#: .\main\templates\main\index.html:139
 msgid "Заказчик:"
 msgstr ""
 
-#: .\main\templates\main\index.html:144
+#: .\main\templates\main\index.html:154
 msgid "Наша команда"
 msgstr ""
 
-#: .\main\templates\main\index.html:154 .\main\templates\main\index.html:155
-#: .\main\templates\main\index.html:167 .\main\templates\main\index.html:168
-msgid "Нет данных"
+#: .\main\templates\main\index.html:173
+msgid "Подробнее"
 msgstr ""
 
-#: .\main\templates\main\index.html:187 .\main\templates\main\index.html:211
-msgid "Обучение"
+#: .\main\templates\main\index.html:189
+msgid "Должность:"
 msgstr ""
 
-#: .\main\templates\main\index.html:188
-msgid "Тренинги, семинары, мастер-классы и менторство для развития навыков."
+#: .\main\templates\main\index.html:192 .\main\templates\main\index.html:241
+msgid "Образование"
 msgstr ""
 
-#: .\main\templates\main\index.html:192 .\main\templates\main\index.html:251
-msgid "Консультационные услуги"
+#: .\main\templates\main\index.html:194
+msgid ""
+"1985 – 1989 гг. Карагандинский кооперативный институт ЦС (КЭУ), "
+"Специальность: Товароведение и организация торговли (Менеджмент Бизнеса), "
+"Квалификация: Товаровед (Менеджер)"
 msgstr ""
 
-#: .\main\templates\main\index.html:193
-msgid "Юридические, бухгалтерские и методические консультации для НПО."
-msgstr ""
-
-#: .\main\templates\main\index.html:197 .\main\templates\main\index.html:279
-msgid "Исследовательско-аналитические"
+#: .\main\templates\main\index.html:195
+msgid ""
+"2016 - 2018 гг. Алматинский университет Менеджмента, MBI, Менеджмент в НПО"
 msgstr ""
 
 #: .\main\templates\main\index.html:198
-msgid "Мониторинг, исследования и аналитические рекомендации."
+msgid "Экспертный опыт"
 msgstr ""
 
-#: .\main\templates\main\index.html:202 .\main\templates\main\index.html:290
-msgid "Услуги по организации мероприятий"
+#: .\main\templates\main\index.html:200
+msgid "С 2021 по н.в. Эксперт Центр поддержки гражданских инициатив НАО"
+msgstr ""
+
+#: .\main\templates\main\index.html:201
+msgid ""
+"2018-2021 гг. Член Независимого Экспертного Совета по Устойчивому Развитию "
+"НКОК"
+msgstr ""
+
+#: .\main\templates\main\index.html:202
+msgid ""
+"2017-2020 гг. Региональный эксперт по вопросам территориального планирования "
+"и гражданского участия, проект «Ауылды бірлесе дамыту» ОЮЛ ГАМО"
 msgstr ""
 
 #: .\main\templates\main\index.html:203
-msgid "Форумы, круглые столы, конференции и общественные слушания."
+msgid ""
+"2016 г. Февраль, эксперт по вопросам территориального планирования и "
+"гражданского участия, проект ЕС «Региональное развитие Казахстана»"
+msgstr ""
+
+#: .\main\templates\main\index.html:204
+msgid ""
+"2014-2016 гг. Член Национального Совета Заинтересованных Сторон по ИПДО, "
+"Астана"
+msgstr ""
+
+#: .\main\templates\main\index.html:207
+msgid "Трудовой опыт"
+msgstr ""
+
+#: .\main\templates\main\index.html:209
+msgid "2022 декабрь по н.в. Директор ОФ «Центр местных инициатив Мангистау»"
+msgstr ""
+
+#: .\main\templates\main\index.html:210
+msgid ""
+"2021 январь - 2022 ноябрь Руководитель группы реализации базового "
+"направления Государственный сектор и государственные услуги, Проектный офис "
+"Мангистауской области"
+msgstr ""
+
+#: .\main\templates\main\index.html:211
+msgid "2000 - 2020 гг. Директор ОФ «Жастар жетістіктері»"
 msgstr ""
 
 #: .\main\templates\main\index.html:212
-msgid "Тренинги"
+msgid ""
+"2005 г. сентябрь - 15 декабрь 2015 г. Президент ОЮЛ «Гражданский Альянс "
+"Мангистауской области»"
+msgstr ""
+
+#: .\main\templates\main\index.html:213
+msgid ""
+"2007 г. по н.в. Лектор областного центра повышения квалификации госслужащих, "
+"г. Актау, МОФ Академии государственного управления при АП РК"
 msgstr ""
 
 #: .\main\templates\main\index.html:214
-msgid "Инструменты медиации"
+msgid ""
+"1998 – 2000 гг. Эксперт программы экономического образования, тренер, ЦАО ОФ "
+"«Достижения молодых»"
 msgstr ""
 
 #: .\main\templates\main\index.html:215
-msgid "Эффективная коммуникация с общественностью"
+msgid ""
+"2001 – 2005 гг. Преподаватель по спец. курсам «Экономика», «Психология», "
+"«Планирование карьеры», Мангистауский гуманитарный колледж"
 msgstr ""
 
 #: .\main\templates\main\index.html:216
-msgid "Управление конфликтами"
+msgid ""
+"2001 – 2003 гг. Методист, Областной Институт Усовершенствования Учителей"
 msgstr ""
 
 #: .\main\templates\main\index.html:217
-msgid "Управление рисками"
+msgid "1999 – 2001 гг. Учитель экономики в средних школах, г. Алматы, Актау"
 msgstr ""
 
 #: .\main\templates\main\index.html:218
-msgid "Оценка потребностей целевой аудитории"
+msgid ""
+"1992 – 1998 гг. Преподаватель, мастер производственного обучения, Торгово-"
+"кулинарная школа ПТШ №18, г. Алматы"
 msgstr ""
 
 #: .\main\templates\main\index.html:219
-msgid "Инструменты адвокации"
+msgid "1991 – 1992 гг. Бухгалтер, Академия Наук РК, институт Географии"
 msgstr ""
 
 #: .\main\templates\main\index.html:220
-msgid "Социальные проекты"
-msgstr ""
-
-#: .\main\templates\main\index.html:221
-msgid "Ведение эффективных переговоров"
+msgid ""
+"1983 – 1989 гг. Продавец, товаровед, зам. директора сельпо, Шиелинский "
+"районный потребсоюз"
 msgstr ""
 
 #: .\main\templates\main\index.html:223
-msgid "Семинары"
+msgid "Общественная деятельность"
 msgstr ""
 
 #: .\main\templates\main\index.html:225
+msgid ""
+"С 2022 года Внештатный советник акима области по вопросам семьи и гендерной "
+"политики"
+msgstr ""
+
+#: .\main\templates\main\index.html:226
+msgid ""
+"С 2021 года Заместитель председателя комиссии по делам женщин и семейно-"
+"демографическим вопросам при акиме Мангистауской области"
+msgstr ""
+
+#: .\main\templates\main\index.html:227
+msgid "2022-2025 гг. Член Общественного совета Мангистауской области"
+msgstr ""
+
+#: .\main\templates\main\index.html:228
+msgid ""
+"С 2022 года Заместитель председателя областного совета матерей при АНК МО"
+msgstr ""
+
+#: .\main\templates\main\index.html:231
+msgid "Дополнительное образование"
+msgstr ""
+
+#: .\main\templates\main\index.html:233
+msgid "2024 декабрь «Основы гендерного равенства»"
+msgstr ""
+
+#: .\main\templates\main\index.html:234
+msgid ""
+"2024 сентябрь «Общественный контроль», ОФ «Фонд развития парламентаризма в "
+"Казахстане», г. Актау"
+msgstr ""
+
+#: .\main\templates\main\index.html:235
+msgid "2024 июнь «Согласительная комиссия в предприятиях Казахстана»"
+msgstr ""
+
+#: .\main\templates\main\index.html:236
+msgid "2022 февраль-апрель «Бюджетная адвокация»"
+msgstr ""
+
+#: .\main\templates\main\index.html:237
+msgid ""
+"2021 февраль Курс «Руководитель проекта» по национальному стандарту ISO "
+"21500-2014 РК, Академия государственного управления при Президенте РК"
+msgstr ""
+
+#: .\main\templates\main\index.html:243
+msgid ""
+"2005-2009 гг. РГКП «Каспийский государственный университет технологий и "
+"инжиниринга им. Ш. Есенова», специальность «Учет и аудит»"
+msgstr ""
+
+#: .\main\templates\main\index.html:246
+msgid "Опыт в НПО"
+msgstr ""
+
+#: .\main\templates\main\index.html:248
+msgid ""
+"декабрь 2009 г. – по настоящее время, бухгалтер в ОФ «Жастар жетістіктері»"
+msgstr ""
+
+#: .\main\templates\main\index.html:249
+msgid "с 2014 г. – по настоящее время, бухгалтер в ЧУ «Zhas Даурен»"
+msgstr ""
+
+#: .\main\templates\main\index.html:250
+msgid "январь 2019 г. – декабрь 2023 г., бухгалтер в ОФ «Шаңырақ»"
+msgstr ""
+
+#: .\main\templates\main\index.html:251
+msgid ""
+"апрель 2021 г. - 2023 г., бухгалтер в Некоммерческом учреждении «Центр "
+"стратегических исследований GUMOL»"
+msgstr ""
+
+#: .\main\templates\main\index.html:252
+msgid "январь 2022 г. - декабрь 2023 г., бухгалтер в ОФ «Саламатты Ел»"
+msgstr ""
+
+#: .\main\templates\main\index.html:253
+msgid "апрель 2023 г. – по настоящее время, бухгалтер в ОФ «Айрық»"
+msgstr ""
+
+#: .\main\templates\main\index.html:254
+msgid ""
+"сентябрь 2023 г. – по настоящее время, бухгалтер в ОФ «Центр местных "
+"инициатив Мангистау»"
+msgstr ""
+
+#: .\main\templates\main\index.html:255
+msgid "август 2024 г. – по настоящее время, бухгалтер в ОФ «Рухтан»"
+msgstr ""
+
+#: .\main\templates\main\index.html:256
+msgid ""
+"ОЮЛ «Гражданский Альянс Мангистауской области»: декабрь 2009 г. – март 2012 "
+"г., бухгалтер; июль 2014 г. – март 2015 г., апрель 2018 г. – февраль 2020 "
+"г., апрель 2022 г. – апрель 2023 г., июль 2024 г. – ноябрь 2024 г., грант-"
+"менеджер"
+msgstr ""
+
+#: .\main\templates\main\index.html:259
+msgid "Курсы"
+msgstr ""
+
+#: .\main\templates\main\index.html:261
+msgid ""
+"Сертифицированный курс «1С: Предприятие 8. Бухгалтерия для Казахстана». "
+"Практическое применение типовой конфигурации. Редакция 3.0."
+msgstr ""
+
+#: .\main\templates\main\index.html:262
+msgid ""
+"Сертифицированный курс «Бухгалтер + налоги + 1С (7.7) + ЭФНО + Учет "
+"отчислений»"
+msgstr ""
+
+#: .\main\templates\main\index.html:263
+msgid "Сертифицированный курс «Кадровое делопроизводство + 1С + архивоведение»"
+msgstr ""
+
+#: .\main\templates\main\index.html:264
+msgid ""
+"Работа с порталами: cabinet.kgd.gov.kz, stat.gov.kz, esf.gov.kz, enbek.kz, "
+"egov.kz, goszakup.gov.kz"
+msgstr ""
+
+#: .\main\templates\main\index.html:265
+msgid "1С: Предприятие"
+msgstr ""
+
+#: .\main\templates\main\index.html:266
+msgid "Система «Интернет-Банкинг»"
+msgstr ""
+
+#: .\main\templates\main\index.html:269
+msgid "Информация о члене команды недоступна."
+msgstr ""
+
+#: .\main\templates\main\index.html:282 .\main\templates\main\index.html:304
+msgid "Обучение"
+msgstr ""
+
+#: .\main\templates\main\index.html:283
+msgid "Тренинги, семинары, мастер-классы и менторство для развития навыков."
+msgstr ""
+
+#: .\main\templates\main\index.html:287 .\main\templates\main\index.html:344
+msgid "Консультационные услуги"
+msgstr ""
+
+#: .\main\templates\main\index.html:288
+msgid "Юридические, бухгалтерские и методические консультации для НПО."
+msgstr ""
+
+#: .\main\templates\main\index.html:292 .\main\templates\main\index.html:372
+msgid "Исследовательско-аналитические"
+msgstr ""
+
+#: .\main\templates\main\index.html:293
+msgid "Мониторинг, исследования и аналитические рекомендации."
+msgstr ""
+
+#: .\main\templates\main\index.html:297 .\main\templates\main\index.html:383
+msgid "Услуги по организации мероприятий"
+msgstr ""
+
+#: .\main\templates\main\index.html:298
+msgid "Форумы, круглые столы, конференции и общественные слушания."
+msgstr ""
+
+#: .\main\templates\main\index.html:305
+msgid "Тренинги"
+msgstr ""
+
+#: .\main\templates\main\index.html:307
+msgid "Инструменты медиации"
+msgstr ""
+
+#: .\main\templates\main\index.html:308
+msgid "Эффективная коммуникация с общественностью"
+msgstr ""
+
+#: .\main\templates\main\index.html:309
+msgid "Управление конфликтами"
+msgstr ""
+
+#: .\main\templates\main\index.html:310
+msgid "Управление рисками"
+msgstr ""
+
+#: .\main\templates\main\index.html:311
+msgid "Оценка потребностей целевой аудитории"
+msgstr ""
+
+#: .\main\templates\main\index.html:312
+msgid "Инструменты адвокации"
+msgstr ""
+
+#: .\main\templates\main\index.html:313
+msgid "Социальные проекты"
+msgstr ""
+
+#: .\main\templates\main\index.html:314
+msgid "Ведение эффективных переговоров"
+msgstr ""
+
+#: .\main\templates\main\index.html:316
+msgid "Семинары"
+msgstr ""
+
+#: .\main\templates\main\index.html:318
 msgid ""
 "Гендерная политика (бытовое насилие, репродуктивное здоровье, семейные "
 "ценности, участие женщин в общественной и политической жизни)"
 msgstr ""
 
-#: .\main\templates\main\index.html:226
+#: .\main\templates\main\index.html:319
 msgid "Формирование антикоррупционной культуры граждан"
 msgstr ""
 
-#: .\main\templates\main\index.html:227
+#: .\main\templates\main\index.html:320
 msgid "Финансовая грамотность"
 msgstr ""
 
-#: .\main\templates\main\index.html:228
+#: .\main\templates\main\index.html:321
 msgid "Участие общественности в местном самоуправлении"
 msgstr ""
 
-#: .\main\templates\main\index.html:229
+#: .\main\templates\main\index.html:322
 msgid "Общественный контроль и мониторинг"
 msgstr ""
 
-#: .\main\templates\main\index.html:230
+#: .\main\templates\main\index.html:323
 msgid "Правила применения государственных символов РК"
 msgstr ""
 
-#: .\main\templates\main\index.html:231
+#: .\main\templates\main\index.html:324
 msgid "Общественные советы"
 msgstr ""
 
-#: .\main\templates\main\index.html:232
+#: .\main\templates\main\index.html:325
 msgid "Стандарт государственного соцзаказа услуг НПО"
 msgstr ""
 
-#: .\main\templates\main\index.html:233
+#: .\main\templates\main\index.html:326
 msgid "Механизмы взаимодействия государственных органов с НПО"
 msgstr ""
 
-#: .\main\templates\main\index.html:234
+#: .\main\templates\main\index.html:327
 msgid "Права потребителя"
 msgstr ""
 
-#: .\main\templates\main\index.html:236
+#: .\main\templates\main\index.html:329
 msgid "Мастер-классы"
 msgstr ""
 
-#: .\main\templates\main\index.html:238
+#: .\main\templates\main\index.html:331
 msgid "По написанию социальных проектов"
 msgstr ""
 
-#: .\main\templates\main\index.html:239 .\main\templates\main\index.html:267
+#: .\main\templates\main\index.html:332 .\main\templates\main\index.html:360
 msgid "Подготовка технической спецификации ГСЗ"
 msgstr ""
 
-#: .\main\templates\main\index.html:240
+#: .\main\templates\main\index.html:333
 msgid "По написанию грантовой заявки"
 msgstr ""
 
-#: .\main\templates\main\index.html:242
+#: .\main\templates\main\index.html:335
 msgid "Менторство"
 msgstr ""
 
-#: .\main\templates\main\index.html:244
+#: .\main\templates\main\index.html:337
 msgid ""
 "Для сотрудников и руководителей начинающих НПО, выпускников колледжей, ВУЗов"
 msgstr ""
 
-#: .\main\templates\main\index.html:252
+#: .\main\templates\main\index.html:345
 msgid "Юридические"
 msgstr ""
 
-#: .\main\templates\main\index.html:254
+#: .\main\templates\main\index.html:347
 msgid "Подготовка учредительных документов для регистрации НПО"
 msgstr ""
 
-#: .\main\templates\main\index.html:255
+#: .\main\templates\main\index.html:348
 msgid "Перерегистрация НПО"
 msgstr ""
 
-#: .\main\templates\main\index.html:256
+#: .\main\templates\main\index.html:349
 msgid "Составление договоров услуг"
 msgstr ""
 
-#: .\main\templates\main\index.html:258
+#: .\main\templates\main\index.html:351
 msgid "Бухгалтерские"
 msgstr ""
 
-#: .\main\templates\main\index.html:260
+#: .\main\templates\main\index.html:353
 msgid "Составление бюджета"
 msgstr ""
 
-#: .\main\templates\main\index.html:261
+#: .\main\templates\main\index.html:354
 msgid "Ведение бухгалтерского учета в рамках проекта"
 msgstr ""
 
-#: .\main\templates\main\index.html:262
+#: .\main\templates\main\index.html:355
 msgid "Подготовка финансовых отчетов"
 msgstr ""
 
-#: .\main\templates\main\index.html:263
+#: .\main\templates\main\index.html:356
 msgid "Сдача налоговых, стат отчетов"
 msgstr ""
 
-#: .\main\templates\main\index.html:265
+#: .\main\templates\main\index.html:358
 msgid "Методические"
 msgstr ""
 
-#: .\main\templates\main\index.html:268
+#: .\main\templates\main\index.html:361
 msgid "Разработка социальных проектов, грантовых заявок"
 msgstr ""
 
-#: .\main\templates\main\index.html:269
+#: .\main\templates\main\index.html:362
 msgid "Составление технического задания для исполнителей"
 msgstr ""
 
-#: .\main\templates\main\index.html:270
+#: .\main\templates\main\index.html:363
 msgid "Составление плана работы"
 msgstr ""
 
-#: .\main\templates\main\index.html:271
+#: .\main\templates\main\index.html:364
 msgid "Составление пресс-релиза"
 msgstr ""
 
-#: .\main\templates\main\index.html:272
+#: .\main\templates\main\index.html:365
 msgid "Коучинг"
 msgstr ""
 
-#: .\main\templates\main\index.html:281
+#: .\main\templates\main\index.html:374
 msgid "Проведение общественного мониторинга"
 msgstr ""
 
-#: .\main\templates\main\index.html:282
+#: .\main\templates\main\index.html:375
 msgid "Проведение социологического исследования"
 msgstr ""
 
-#: .\main\templates\main\index.html:283
+#: .\main\templates\main\index.html:376
 msgid "Подготовка рекомендаций и отзывов аналитическим отчетам"
 msgstr ""
 
-#: .\main\templates\main\index.html:292
+#: .\main\templates\main\index.html:385
 msgid "Модерация диалоговых площадок, форумов"
 msgstr ""
 
-#: .\main\templates\main\index.html:293
+#: .\main\templates\main\index.html:386
 msgid "Круглые столы и семинары, конференции, форумы"
 msgstr ""
 
-#: .\main\templates\main\index.html:294
+#: .\main\templates\main\index.html:387
 msgid "Общественные слушания"
 msgstr ""
 
-#: .\main\templates\main\index.html:318
+#: .\main\templates\main\index.html:409
 msgid "г. Актау, 34 мкр., Дом Дружбы, 29 офис"
 msgstr ""
 
-#: .\main\templates\main\index.html:327
+#: .\main\templates\main\index.html:418
 msgid "Отправьте сообщение"
 msgstr ""
 
-#: .\main\templates\main\index.html:330
+#: .\main\templates\main\index.html:421
 msgid "Ваше имя"
 msgstr ""
 
-#: .\main\templates\main\index.html:331
+#: .\main\templates\main\index.html:422
 msgid "Ваш email"
 msgstr ""
 
-#: .\main\templates\main\index.html:332
+#: .\main\templates\main\index.html:423
 msgid "Ваше сообщение"
 msgstr ""
 
-#: .\main\templates\main\index.html:333
+#: .\main\templates\main\index.html:424
 msgid "Отправить"
 msgstr ""
 
-#: .\main\templates\main\index.html:355
+#: .\main\templates\main\index.html:444
 msgid "Что такое общественный мониторинг?"
 msgstr ""
 
-#: .\main\templates\main\index.html:356
+#: .\main\templates\main\index.html:445
 msgid ""
 "Общественный мониторинг — это процесс наблюдения и анализа деятельности "
 "органов власти и других организаций с целью выявления проблем и нарушений. "
 "Мы помогаем жителям активно участвовать в этом процессе."
 msgstr ""
 
-#: .\main\templates\main\index.html:359
+#: .\main\templates\main\index.html:448
 msgid "Как работает коучинг?"
 msgstr ""
 
-#: .\main\templates\main\index.html:360
+#: .\main\templates\main\index.html:449
 msgid ""
-"Коучинг — это метод индивидуальной работы, который помогает участникам "
-"развивать свои навыки и решать задачи. Мы проводим сессии для жителей по "
-"вопросам участия в общественной жизни."
+"Коучинг — это индивидуальная работа, направленная на развитие навыков и "
+"достижение целей. Мы проводим коучинговые сессии для НПО, местных сообществ "
+"и активных граждан, помогая им эффективно участвовать в общественной жизни, "
+"разрабатывать проекты и укреплять гражданские инициативы."
 msgstr ""
 
-#: .\main\templates\main\index.html:363
+#: .\main\templates\main\index.html:452
 msgid "Какие виды консультаций вы предоставляете?"
 msgstr ""
 
-#: .\main\templates\main\index.html:364
+#: .\main\templates\main\index.html:453
 msgid ""
 "Мы предоставляем консультации по вопросам участия в общественном "
-"мониторинге, развития инициатив и решению региональных проблем."
+"мониторинге, юридических, бухалтерских, методических и решению региональных "
+"проблем."
 msgstr ""
 
-#: .\main\templates\main\index.html:367
-msgid "Как записаться на семинар?"
+#: .\main\templates\main\index.html:456
+msgid "Как мы можем помочь вашему НПО развиваться?"
 msgstr ""
 
-#: .\main\templates\main\index.html:368
+#: .\main\templates\main\index.html:457
 msgid ""
-"Вы можете записаться на семинар через наш сайт или связавшись с нами по "
-"указанным контактам. Участие бесплатное и открыто для всех желающих."
+"Мы предлагаем консультации, тренинги и коучинговые сессии для НПО и активных "
+"граждан. Свяжитесь с нами через сайт или по указанным контактам, чтобы "
+"узнать, как мы можем поддержать ваши проекты и инициативы."
 msgstr ""
 
-#: .\main\templates\main\index.html:371
+#: .\main\templates\main\index.html:460
 msgid "Вы помогаете в регистрации НПО?"
 msgstr ""
 
-#: .\main\templates\main\index.html:372
+#: .\main\templates\main\index.html:461
 msgid ""
 "Да, мы консультируем по вопросам регистрации и правовым аспектам "
 "деятельности неправительственных организаций."
 msgstr ""
 
-#: .\main\templates\main\index.html:375
+#: .\main\templates\main\index.html:464
 msgid "Проводите ли вы обучение для молодежи?"
 msgstr ""
 
-#: .\main\templates\main\index.html:376
+#: .\main\templates\main\index.html:465
 msgid ""
 "Да, мы организуем тренинги и мастер-классы для молодежи, направленные на "
 "развитие лидерских навыков и активное участие в жизни сообщества."

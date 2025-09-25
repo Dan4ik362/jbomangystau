@@ -67,27 +67,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 
     // Dialogs for Services
-    function openDialog(dialogId) {
-        console.log("Попытка открыть диалог:", dialogId);
-        const dialog = document.getElementById(dialogId);
-        if (dialog) {
-            dialog.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-            console.log("Диалог открыт:", dialogId);
-        } else {
-            console.error("Диалог с ID", dialogId, "не найден!");
-        }
+function openDialog(dialogId) {
+    console.log("Попытка открыть диалог:", dialogId);
+    const dialog = document.getElementById(dialogId);
+    if (dialog) {
+        dialog.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        console.log("Диалог открыт:", dialogId);
+    } else {
+        console.error("Диалог с ID", dialogId, "не найден!");
     }
+}
 
-    function closeDialog(dialogId) {
-        console.log("Попытка закрыть диалог:", dialogId);
-        const dialog = document.getElementById(dialogId);
-        if (dialog) {
-            dialog.style.display = 'none';
-            document.body.style.overflow = 'auto';
-            console.log("Диалог закрыт:", dialogId);
-        }
+function closeDialog(dialogId) {
+    console.log("Попытка закрыть диалог:", dialogId);
+    const dialog = document.getElementById(dialogId);
+    if (dialog) {
+        dialog.style.display = 'none';
+        document.body.style.overflow = 'auto';
+        console.log("Диалог закрыт:", dialogId);
     }
+}
 
     document.querySelectorAll('.dialog').forEach(dialog => {
         dialog.addEventListener('click', function(event) {
@@ -231,7 +231,7 @@ window.addEventListener("resize", () => {
 });
 
     // Team Carousel
-if (!window.teamMembers) {
+    if (!window.teamMembers) {
     console.error("teamMembers is not defined");
     return;
 }
@@ -280,7 +280,7 @@ function updateTeamCarousel(newIndex) {
         setTimeout(() => {
             teamMemberName.textContent = teamMembers[teamCurrentIndex].name;
             teamMemberRole.textContent = teamMembers[teamCurrentIndex].role;
-            detailsBtn.setAttribute("onclick", `openDialog('member-dialog-${teamMembers[teamCurrentIndex].name.toLowerCase().replace(/ /g, '-')}')`);
+            detailsBtn.setAttribute("onclick", `openDialog('member-dialog-${teamCurrentIndex}')`);
             teamMemberName.style.opacity = "1";
             teamMemberRole.style.opacity = "1";
             detailsBtn.style.opacity = "1";
